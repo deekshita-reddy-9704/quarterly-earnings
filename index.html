@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- RevealJS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
+
+  <!-- Code Syntax Highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide 1: Title -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <p>Prepared by Technical Consultant</p>
+        <p>Email: <b>22f3000075@ds.study.iitm.ac.in</b></p>
+        <aside class="notes">
+          Welcome stakeholders. This report shows quarterly performance with interactive elements.
+        </aside>
+      </section>
+
+      <!-- Slide 2: Markdown -->
+      <section data-markdown>
+        <textarea data-template>
+# Highlights (Markdown Slide)
+
+- 📈 Revenue Growth
+- 💰 Profit Margins
+- 🌍 Global Expansion
+        </textarea>
+        <aside class="notes">
+          This slide demonstrates a Markdown-powered section.
+        </aside>
+      </section>
+
+      <!-- Slide 3: Animated Fragments -->
+      <section>
+        <h2>Q2 Key Metrics</h2>
+        <ul>
+          <li class="fragment">Revenue: $1.2B</li>
+          <li class="fragment">Expenses: $0.8B</li>
+          <li class="fragment">Net Profit: $0.4B</li>
+        </ul>
+        <aside class="notes">
+          Reveal figures step by step using fragments.
+        </aside>
+      </section>
+
+      <!-- Slide 4: Code Sample -->
+      <section>
+        <h2>Financial Data Query</h2>
+        <pre><code class="language-sql">
+SELECT quarter, revenue, expenses, profit
+FROM financials
+WHERE year = 2025;
+        </code></pre>
+        <aside class="notes">
+          Showing SQL code with syntax highlighting.
+        </aside>
+      </section>
+
+      <!-- Slide 5: Math Formula -->
+      <section>
+        <h2>Financial Formula</h2>
+        <p>Return on Investment (ROI):</p>
+        <p>$$ ROI = \frac{Net\ Profit}{Cost\ of\ Investment} \times 100 $$</p>
+        <aside class="notes">
+          Example of financial equation using MathJax.
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- RevealJS Core -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath ]
+    });
+  </script>
+</body>
+</html>
